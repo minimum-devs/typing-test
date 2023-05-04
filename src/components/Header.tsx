@@ -146,26 +146,6 @@ export default function Header() {
 
     return (
         <header className={timerId ? "hidden" : undefined}>
-            <a href="." className="brand">
-                typing-test
-            </a>
-            <div className="buttons">
-                {Object.entries(options).map(([option, choices]) => (
-                    <div key={option} className={option}>
-                        {option}:
-                        {choices.map((choice: string) => (
-                            <button
-                                className="mini"
-                                key={choice}
-                                data-option={option}
-                                value={choice}
-                                onClick={(e) => handleOptions(e)}>
-                                {choice}
-                            </button>
-                        ))}
-                    </div>
-                ))}
-            </div>
             {animationProps ? (
                 <div
                     className={`animated-theme ${animationProps.theme}`}

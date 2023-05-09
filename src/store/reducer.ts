@@ -111,19 +111,15 @@ const wordReducer = (
             const areNotWords = payload.some((word: string) =>
                 word.includes(" ")
             );
-            var shuffledWordList: string[] = payload.sort(
-                () => Math.random() - 0.5
-            );
-            if (areNotWords)
-                shuffledWordList = payload.flatMap((token: string) =>
-                    token.split(" ")
-                );
+            const wordList: string[] = areNotWords
+                ? payload.flatMap((token: string) => token.split(" "))
+                : payload;
             return {
                 ...state,
                 typedWord: "",
                 typedHistory: [],
-                currWord: shuffledWordList[0],
-                wordList: shuffledWordList,
+                currWord: wordList[0],
+                wordList,
             };
         default:
             return state;

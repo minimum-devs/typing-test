@@ -17,6 +17,9 @@ export default function Result() {
         if (r) correctChars += wordList[idx].length;
     });
     const wpm = ((correctChars + spaces) * 60) / timeLimit / 5;
+
+    window.bubble_fn_score(wpm);
+
     return (
         <div className="result">
             <table>

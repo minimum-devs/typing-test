@@ -25,7 +25,7 @@ export default function Result() {
     // @ts-ignore
     // eslint-disable-next-line no-restricted-globals
     console.log(window);
-    
+
     // @ts-ignore
     // eslint-disable-next-line no-restricted-globals
     console.log(window.parent);
@@ -40,6 +40,7 @@ export default function Result() {
                 <tbody>
                     <tr>
                         <td colSpan={2} align="center">
+                            {console.log("wtf?")}
                             <h1>{Math.round(wpm) + " wpm"}</h1>
                         </td>
                     </tr>

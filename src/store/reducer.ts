@@ -80,7 +80,7 @@ const wordReducer = (
         case SET_CHAR:
             return { ...state, typedWord: payload };
         case SET_WORD:
-            console.log(payload);g
+            console.log(payload);
             return { ...state, typedHistory: [...state.typedHistory, payload] };
         case APPEND_TYPED_HISTORY:
             const nextIdx = state.typedHistory.length + 1;

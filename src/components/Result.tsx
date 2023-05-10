@@ -22,6 +22,18 @@ export default function Result() {
     // eslint-disable-next-line no-restricted-globals
     window.parent.window.bubble_fn_score(wpm);
 
+    // @ts-ignore
+    // eslint-disable-next-line no-restricted-globals
+    console.log(window);
+    
+    // @ts-ignore
+    // eslint-disable-next-line no-restricted-globals
+    console.log(window.parent);
+
+    // @ts-ignore
+    // eslint-disable-next-line no-restricted-globals
+    console.log(window.parent.window.bubble_fn_score);
+
     return (
         <div className="result">
             <table>

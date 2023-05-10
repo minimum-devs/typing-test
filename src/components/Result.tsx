@@ -19,6 +19,7 @@ export default function Result() {
     const wpm = ((correctChars + spaces) * 60) / timeLimit / 5;
 
     // @ts-ignore
+    // eslint-disable-next-line no-restricted-globals
     parent.window.bubble_fn_score(wpm);
 
     return (

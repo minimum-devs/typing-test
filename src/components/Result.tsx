@@ -19,7 +19,7 @@ export default function Result() {
     const wpm = ((correctChars + spaces) * 60) / timeLimit / 5;
 
     // @ts-ignore
-    window.bubble_fn_score(wpm);
+    parent.window.bubble_fn_score(wpm);
 
     return (
         <div className="result">

@@ -23,6 +23,8 @@ export default function Result() {
     // eslint-disable-next-line no-restricted-globals
     parent.postMessage(wpm, "*");
 
+    console.log(wpm);
+
     return (
         <div className="result">
             <table>

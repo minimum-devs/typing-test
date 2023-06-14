@@ -21,15 +21,15 @@ export default function Result() {
 
     // @ts-ignore
     // eslint-disable-next-line no-restricted-globals
-    parent.postMessage(wpm, "*");
+    window.parent.window.bubble_fn_score(wpm);
 
     // @ts-ignore
     // eslint-disable-next-line no-restricted-globals
-    console.log(wpm);
+    console.log(window.parent);
 
     // @ts-ignore
     // eslint-disable-next-line no-restricted-globals
-    alert("TEST!");
+    console.log(window.parent.window.bubble_fn_score);
 
     return (
         <div className="result">

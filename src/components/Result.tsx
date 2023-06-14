@@ -19,27 +19,9 @@ export default function Result() {
 
     const wpm = ((correctChars + spaces) * 60) / timeLimit / 5;
 
-    console.error(wpm);
-
     // @ts-ignore
     // eslint-disable-next-line no-restricted-globals
-    console.error(window);
-
-    // @ts-ignore
-    // eslint-disable-next-line no-restricted-globals
-    // window.parent.window.bubble_fn_score(wpm);
-
-    // @ts-ignore
-    // eslint-disable-next-line no-restricted-globals
-    // alert(JSON.stringify(window));
-
-    // @ts-ignore
-    // eslint-disable-next-line no-restricted-globals
-    // console.log(window.parent);
-
-    // @ts-ignore
-    // eslint-disable-next-line no-restricted-globals
-    // console.log(window.parent.window.bubble_fn_score);
+    parent.postMessage(wpm, "*");
 
     return (
         <div className="result">

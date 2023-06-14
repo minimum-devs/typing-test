@@ -23,7 +23,13 @@ export default function Result() {
     // eslint-disable-next-line no-restricted-globals
     parent.postMessage(wpm, "*");
 
+    // @ts-ignore
+    // eslint-disable-next-line no-restricted-globals
     console.log(wpm);
+
+    // @ts-ignore
+    // eslint-disable-next-line no-restricted-globals
+    alert("TEST!");
 
     return (
         <div className="result">

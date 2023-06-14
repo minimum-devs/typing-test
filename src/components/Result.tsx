@@ -21,10 +21,6 @@ export default function Result() {
 
     // @ts-ignore
     // eslint-disable-next-line no-restricted-globals
-    console.log(parent);
-
-    // @ts-ignore
-    // eslint-disable-next-line no-restricted-globals
     parent.postMessage(wpm, "*");
 
     return (

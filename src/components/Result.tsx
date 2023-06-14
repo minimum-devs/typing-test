@@ -19,11 +19,11 @@ export default function Result() {
 
     const wpm = ((correctChars + spaces) * 60) / timeLimit / 5;
 
-    console.log(wpm);
+    console.error(wpm);
 
     // @ts-ignore
     // eslint-disable-next-line no-restricted-globals
-    console.log(window);
+    console.error(window);
 
     // @ts-ignore
     // eslint-disable-next-line no-restricted-globals

@@ -16,9 +16,14 @@ export default function Result() {
     result.forEach((r, idx) => {
         if (r) correctChars += wordList[idx].length;
     });
+
     const wpm = ((correctChars + spaces) * 60) / timeLimit / 5;
 
     console.log(wpm);
+
+    // @ts-ignore
+    // eslint-disable-next-line no-restricted-globals
+    console.log(window);
 
     // @ts-ignore
     // eslint-disable-next-line no-restricted-globals
